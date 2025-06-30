@@ -1,21 +1,17 @@
 variable "project" {
-  description = "GCP project ID"
+  description = "newterraformviariables"
   type        = string
 }
 
 variable "region" {
-  description = "GCP region"
+  description = "Us-Central1"
   type        = string
 }
 
 variable "zone" {
-  description = "GCP zone"
+  description = "Us-central1-a"
   type        = string
-}
 
-variable "credentials_file" {
-  description = "Path to credentials file"
-  type        = string
 }
 
 variable "new" {
