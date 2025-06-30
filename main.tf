@@ -34,7 +34,7 @@ resource "google_compute_instance" "default" {
 
   network_interface {
     network = google_compute_network.default.id
-    access_config {}  # Needed for external IP
+    access_config {} # Needed for external IP
   }
 }
 
