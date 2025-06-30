@@ -2,7 +2,7 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "~> 6.8"
+      version = "~>6.8"
     }
   }
 }
@@ -19,7 +19,7 @@ resource "google_compute_network" "default" {
 }
 
 resource "google_compute_instance" "default" {
-  name         = var.new
+  name         = var.Instance_name
   machine_type = var.machine_type
   zone         = var.zone
 
@@ -34,7 +34,6 @@ resource "google_compute_instance" "default" {
 
   network_interface {
     network = google_compute_network.default.id
-    access_config {} # Needed for external IP
+    access_config {} # Needed for external IP (optional)
   }
 }
-
