@@ -15,7 +15,7 @@ provider "google" {
 }
 
 resource "google_compute_network" "default" {
-  name = "default-network"
+  name                    = "default-network"
   auto_create_subnetworks = true
 }
 
